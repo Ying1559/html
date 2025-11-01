@@ -1,0 +1,16 @@
+<html>
+    <head><title>登入</title></head>
+    <body>
+        <form method="GET" action="login.php">
+        <!--
+          <form>：建立表單，用來收集使用者輸入的資料。
+          method="GET"：以 GET 方式傳送資料（會顯示在網址列上）
+          action="login.php"：資料會送到 login.php 這個伺服器端檔案做處理
+        -->
+            帳號：<input type="text" name=id><br>
+            密碼：<input type="password" name=pwd><p>
+            <input type="submit" value="登入"> 
+            <input type="reset" value="清除">
+        </form>
+    </body>
+</html>
