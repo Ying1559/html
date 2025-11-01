@@ -1,1 +1,11 @@
-
+<html>
+    <head><title>圖片</title></head>
+    <body>
+        <img src="https://github.com/shhuangmust/html/blob/112-1/dog.jpg?raw=true">
+    <!--
+     scr:圖片來源
+     alt:當圖片無法顯示時的替代文字
+     width / height：設定圖片的寬高
+    -->
+    </body>
+</html>
