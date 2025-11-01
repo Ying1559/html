@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>css</title>
+        <!--external(外部) css-->
+        <!--
+        external(外部)CSS:通常用來統一整個網站的設計風格
+        -->
+        <link rel="stylesheet" href="https://rawcdn.githack.com/shhuangmust/html/fc0253b382011528e5bcc69e74425c6d03f1adc3/import.css">
+        <!--internal(內部) css-->
+        <!--
+        internal（內部）CSS： 直接在 <style> 標籤中撰寫樣式，適合用於單一頁面的小型樣式設定。
+        -->
+        <style>
+            h2 {color:green;} 
+        </style>
+    </head>
+    <body>
+        <h1 style="color:red;">
+            這是甚麼顏色 <!--inline(行內) css-->
+        </h1>
+        <h2>這是甚麼顏色</h2>
+        <h3>這是甚麼顏色</h3>
+    </body>
+</html>
