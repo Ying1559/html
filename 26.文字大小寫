@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <style>
+            h1{color: #1a7aef;
+              <!--
+               設定文字顏色(藍色)
+               -->
+               background-color: #ff6a00;
+               <!--
+               設定背景顏色(橘色)
+               -->
+               box-shadow:2px 2px 3px red;
+               <!--
+               設定文字區塊陰影
+               -->
+               text-transform: uppercase}
+               <!--
+              將英文字母全部轉為大寫 
+               -->
+            h2{text-transform: lowercase}
+            <!--
+             將英文字母全部轉為小寫
+            -->
+            h3{text-transform: capitalize}
+           <!--
+            將每個單字的首字母轉為大寫
+            -->
+        </style>
+    </head>
+    <body>
+        <h1>This is some text in a paragraph.</h1>
+        <h2>This is some text in a paragraph.</h2>
+        <h3>This is some text in a paragraph.</h3>
+    </body>
+</html>
