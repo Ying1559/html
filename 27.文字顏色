@@ -1,11 +1,19 @@
 <html>
   <head>
-      <
       <title>文字顏色</title>
       <style>
         h1{ Color:red; }
+        <!--
+         h1 標題文字設為紅色
+         -->
         h2{ Color:##99BBFF; }
+        <!--
+         h2 標題文字設為淡藍色(用十六進位法)
+         -->
         h3{ Color: rgb(255, 0 , 255) }
+        <!--
+          h3 標題文字設為粉紅色(RGB顏色代表)
+         -->
       </style>
   </head>
   <body>
