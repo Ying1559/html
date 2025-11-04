@@ -2,9 +2,18 @@
   <head><title>文字顏色</title></head>
       <style>
         .f1{ font-size:large; }
+         <!--
+          用關鍵字設定字體大小
+          -->
         .f2{ font-size:20px; }
+          <!--
+          用絕對單位（px：像素）設定字體大小
+          --> 
         .f3{ font-size:2em; }
-      </style>
+          <!--
+          用相對單位設定字體大小
+          -->
+      <style>
   </head>
   <body>
     <p>原始大小</p>
