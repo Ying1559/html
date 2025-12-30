@@ -1,193 +1,38 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Basque Cheesecake House</title>
+<meta charset="UTF-8">
+<title>巴斯克蛋糕</title>
 
-<link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
-<script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>
-
-<script>
-$(window).on("load", function () {
-    $('.flexslider').flexslider({
-        animation: "slide"
-    });
-});
-</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css">
 
 <style>
 body{
-    margin:0;
-    font-family: "Segoe UI","Microsoft JhengHei", Arial;
-    background:#fff8e7;
+  margin:0;
+  background:#faf1d5;
+  font-family:"微軟正黑體";
 }
 
-/* Header */
-#b1{
-    height:100px;
-    line-height:100px;
-    background:#e6c89c;
-}
-#b1 h1{
-    text-align:center;
-    margin:0;
-    color:#4b2e13;
+/* 輪播 */
+.flexslider{
+  position:relative;
 }
 
-/* Menu */
-#b2{
-    height:50px;
-    background:#4b2e13;
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:60px;
-}
-.b2-1{
-    cursor:pointer;
-    position:relative;
-    padding:0 10px;
-}
-.b2-1:hover{
-    background:#6b4226;
-}
-.b2-1 ul{
-    list-style:none;
-    margin:0;
-    padding:0;
-    position:absolute;
-    background:#6b4226;
-    display:none;
-}
-.b2-1:hover ul{
-    display:block;
-}
-.b2-1 ul li a{
-    color:white;
-    text-decoration:none;
-    display:block;
-    padding:10px 16px;
-}
-.b2-1 ul li:hover{
-    background:white;
-}
-.b2-1 ul li:hover a{
-    color:#4b2e13;
+.flexslider img{
+  width:100%;
+  height:650px;
+  object-fit:cover;
 }
 
-/* Slider */
-.slider img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
-}
-
-/* Big Banner */
-#b3{
-    height:700px;
-    background-image:url(https://images.unsplash.com/photo-1606813907291-5d73e730cdce);
-    background-size:cover;
-    background-position:center;
-}
-#b3 h2{
-    color:white;
-    padding:80px 150px;
-    margin:0;
-    font-size:42px;
-    text-shadow:2px 2px 10px black;
-}
-
-/* Product */
-#b4{
-    padding:60px;
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    flex-wrap:wrap;
-}
-#b4 img{
-    width:220px;
-    height:280px;
-    object-fit:cover;
-    border-radius:16px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
-}
-
-/* Footer */
-#b5{
-    height:70px;
-    line-height:70px;
-    background:#4b2e13;
-}
-#b5 h4{
-    text-align:center;
-    color:white;
-    margin:0;
-}
-</style>
-</head>
-
-<body>
-
-<div id="b1">
-    <h1>巴斯克乳酪蛋糕 Basque Cheesecake</h1>
-</div>
-
-<div id="b2">
-    <div class="b2-1">首頁</div>
-    <div class="b2-1">關於我們</div>
-
-    <div class="b2-1">甜點品項
-        <ul>
-            <li><a href="#">經典巴斯克</a></li>
-            <li><a href="#">抹茶巴斯克</a></li>
-            <li><a href="#">巧克力巴斯克</a></li>
-        </ul>
-    </div>
-
-    <div class="b2-1">聯絡我們</div>
-</div>
-
-<!-- 跑馬燈圖片（用你的原始檔名） -->
-<style>
-/* 讓輪播圖片變小一點 */
-.flexslider {
-    max-width: 900px;     /* 輪播寬度 */
-    margin: 0 auto;       /* 置中 */
-}
-
-.flexslider .slides img{
-    height: 420px;        /* 輪播高度(可再調整) */
-    object-fit: cover;    /* 保持比例裁切 */
-}
-</style>
-
-<div class="slider">
-    <div class="flexslider">
-        <ul class="slides">
-            <li><img src="800x.jpg"></li>
-            <li><img src="1692187600471.jpeg"></li>
-        </ul>
-    </div>
-</div>
-
-
-<div id="b3">
-    <h2>焦糖色外皮 × 綿密香濃內餡<br>這就是幸福的味道</h2>
-    <li><img src="maxresdefault.jpg"></li>
-</div>
-
-<div id="b4">
-    <img src="S__3686496.jpg">
-    <img src="S__3686497.jpg">
-    <img src="S__3686498.jpg">
-</div>
-
-<div id="b5">
-    <h4>Basque Cheesecake House © All Rights Reserved</h4>
-</div>
-
-</body>
-</html>
+/* 文字在圖片上 */
+.slider-text{
+  position:absolute;
+  top:25%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  color:white;
+  font-size:48px;
+  text-align:center;
+  font-weight:900;
+  line-height:1.6;
+  text-shadow:0 0 12px rgba(
