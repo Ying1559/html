@@ -1,0 +1,116 @@
+/* 整個導覽列 */
+.navbar{
+  width:100%;
+  background:#2b72ff;   /* 這裡改顏色 */
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:999;
+}
+
+/* 置中 */
+.nav-container{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 20px;
+  color:#fff;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* 選單 */
+.menu{
+  list-style:none;
+  display:flex;
+  gap:30px;
+}
+
+.menu li a{
+  text-decoration:none;
+  color:white;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.menu li a:hover{
+  color:#ffe36e;
+}
+
+/* 下拉 */
+.dropdown{
+  position:relative;
+}
+
+.dropdown-menu{
+  list-style:none;
+  position:absolute;
+  top:35px;
+  left:0;
+  background:white;
+  padding:10px 0;
+  width:150px;
+  border-radius:8px;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+  opacity:0;
+  pointer-events:none;
+  transform:translateY(10px);
+  transition:all .3s;
+}
+
+.dropdown-menu li a{
+  display:block;
+  padding:8px 15px;
+  color:#333;
+}
+
+.dropdown:hover .dropdown-menu{
+  opacity:1;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+
+/* 手機版 */
+.hamburger{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+  .hamburger{
+    display:block;
+  }
+
+  .menu{
+    position:absolute;
+    top:60px;
+    left:0;
+    width:100%;
+    background:#2b72ff;
+    flex-direction:column;
+    text-align:center;
+    display:none;
+    padding:15px 0;
+  }
+
+  .menu.show{
+    display:block;
+  }
+
+  .dropdown-menu{
+    position:relative;
+    width:100%;
+    box-shadow:none;
+  }
+}
+
+/* 讓內容不要被 navbar 蓋住 */
+section{
+  padding-top:80px;
+}
