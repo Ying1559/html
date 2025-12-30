@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>訂購巴斯克蛋糕</title>
+
+<style>
+body{
+  margin:0;
+  background:#fff3da;
+  font-family:"Microsoft JhengHei";
+}
+
+header{
+  background:#4b2e13;
+  color:white;
+  height:90px;
+  text-align:center;
+  line-height:90px;
+  font-size:28px;
+}
+
+.form-box{
+  width:60%;
+  margin:40px auto;
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+label{
+  font-size:18px;
+}
+
+input, select, textarea{
+  width:100%;
+  padding:10px;
+  margin-top:6px;
+  margin-bottom:18px;
+  border-radius:10px;
+  border:1px solid gray;
+}
+
+button{
+  background:#4b2e13;
+  color:white;
+  padding:10px 30px;
+  border:none;
+  border-radius:25px;
+  font-size:18px;
+}
+
+button:hover{
+  background:#6b4226;
+}
+
+.back{
+  display:inline-block;
+  margin-top:20px;
+  text-decoration:none;
+  color:#4b2e13;
+  font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<header>🛒 訂購巴斯克蛋糕</header>
+
+<div class="form-box">
+
+<form>
+
+<label>選擇品項</label>
+<select>
+  <option>經典巴斯克</option>
+  <option>抹茶巴斯克</option>
+  <option>巧克力巴斯克</option>
+</select>
+
+<label>數量</label>
+<input type="number" min="1" value="1">
+
+<label>姓名</label>
+<input type="text">
+
+<label>電話</label>
+<input type="text">
+
+<label>取貨方式</label>
+<select>
+  <option>門市自取</option>
+  <option>宅配到府</option>
+</select>
+
+<label>備註</label>
+<textarea rows="4"></textarea>
+
+<button type="submit">送出訂單</button>
+</form>
+
+<a class="back" href="product.html">⬅ 回商品頁</a><br>
+<a class="back" href="final.html">⬅ 回首頁</a>
+
+</div>
+
+</body>
+</html>
