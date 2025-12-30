@@ -151,15 +151,29 @@ body{
 </div>
 
 <!-- 跑馬燈圖片（用你的原始檔名） -->
+<style>
+/* 讓輪播圖片變小一點 */
+.flexslider {
+    max-width: 900px;     /* 輪播寬度 */
+    margin: 0 auto;       /* 置中 */
+}
+
+.flexslider .slides img{
+    height: 420px;        /* 輪播高度(可再調整) */
+    object-fit: cover;    /* 保持比例裁切 */
+}
+</style>
+
 <div class="slider">
-  <div class="flexslider">
-    <ul class="slides">
-      <li><img src="maxresdefault.jpg"></li>
-      <li><img src="atl_230023649_164.jpg"></li>
-      <li><img src="800x.jpg"></li>
-    </ul>
-  </div>
+    <div class="flexslider">
+        <ul class="slides">
+            <li><img src="atl_230023649_164.jpg"></li>
+            <li><img src="800x.jpg"></li>
+            <li><img src="1692187600471.jpeg"></li>
+        </ul>
+    </div>
 </div>
+
 
 <div id="b3">
     <h2>焦糖色外皮 × 綿密香濃內餡<br>這就是幸福的味道</h2>
