@@ -2,21 +2,106 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>甜點品項</title>
+<title>甜點品項 | Basque Cheesecake</title>
+
+<style>
+body{
+  margin:0;
+  font-family:"Microsoft JhengHei";
+  background:#fff8e7;
+}
+
+header{
+  height:90px;
+  background:#e6c89c;
+  text-align:center;
+  line-height:90px;
+  color:#4b2e13;
+  font-size:28px;
+}
+
+/* 卡片區 */
+.container{
+  width:90%;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+  padding:60px 0;
+}
+
+.card{
+  width:260px;
+  background:white;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  overflow:hidden;
+  text-align:center;
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card h2{
+  color:#4b2e13;
+}
+
+.card p{
+  padding:0 20px;
+}
+
+.btn{
+  display:inline-block;
+  margin:14px;
+  padding:8px 20px;
+  background:#4b2e13;
+  color:white;
+  text-decoration:none;
+  border-radius:25px;
+}
+
+.btn:hover{
+  background:#6b4226;
+}
+</style>
 </head>
 
-<body style="font-family:Microsoft JhengHei; text-align:center;">
-  <h1>🍰 我們的巴斯克蛋糕</h1>
+<body>
 
-  <h2>經典巴斯克</h2>
-  <p>外酥內嫩，香濃乳酪風味。</p>
+<header>🍰 甜點品項 MENU</header>
 
-  <h2>抹茶巴斯克</h2>
-  <p>抹茶香 × 濃郁乳酪完美融合。</p>
+<div class="container">
 
-  <h2>巧克力巴斯克</h2>
-  <p>甜而不膩，入口即化。</p>
+  <div class="card">
+    <img src="S__3686496.jpg">
+    <h2>經典巴斯克</h2>
+    <p>香濃綿密，最經典的原味。</p>
+    <a class="btn" href="order.html">我要訂購</a>
+  </div>
 
-  <a href="final.html">⬅ 回首頁</a>
+  <div class="card">
+    <img src="S__3686497.jpg">
+    <h2>抹茶巴斯克</h2>
+    <p>濃濃抹茶香與乳酪完美融合。</p>
+    <a class="btn" href="order.html">我要訂購</a>
+  </div>
+
+  <div class="card">
+    <img src="S__3686498.jpg">
+    <h2>巧克力巴斯克</h2>
+    <p>甜而不膩，入口即化。</p>
+    <a class="btn" href="order.html">我要訂購</a>
+  </div>
+
+</div>
+
+<div style="text-align:center; padding-bottom:40px;">
+  <a href="final.html" class="btn">⬅ 回首頁</a>
+</div>
+
 </body>
 </html>
